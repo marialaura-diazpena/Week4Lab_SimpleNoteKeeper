@@ -1,6 +1,6 @@
 <%-- 
     Document   : ViewNote
-    Created on : Feb 3, 2021, 1:28:31 PM
+    Created on : Feb 1, 2021, 6:19:46 PM
     Author     : 807930
 --%>
 
@@ -9,9 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Simple Note Keeper</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Simple Note Keeper</h1>
+        <h2>View Note </h2>
+
+        <p><b>Title:</b> ${note.title}</p>
+        
+        <p><b>Contents:</b><br>${note.content}</p>
+
+        <a href="note?edit" >Edit</a>
     </body>
 </html>
